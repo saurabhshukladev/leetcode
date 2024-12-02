@@ -7,3 +7,5 @@
 
 ### remove-element <br/> https://leetcode.com/problems/remove-element
 - since max value for numbers in the list is 50 we can change the removable numbers to 51 and sort it
+- alternate: move a pointer and index if pointer is not equal to val then assign it to index
+    - index only moves it i is not equal to val, index stops on val to replace it
