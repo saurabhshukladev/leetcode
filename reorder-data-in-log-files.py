@@ -1,6 +1,4 @@
 # TODO implement better solution
-# TODO call the method using leetcode design
-# TODO add Readme notes
 
 def sol1(nums) -> list:
     digitLog = []

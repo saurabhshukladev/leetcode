@@ -17,3 +17,14 @@
     that is diffrent that a[j-1] i tell j to assign a[i] to a[j] and move one step forward
     - j lags behind and only move when i has found a different number, j doesn't like moving on duplicates it stops after taking 1 step
     - j waits on number to be replaced
+
+### reorder-data-in-log-files <br/> https://leetcode.com/problems/reorder-data-in-log-files
+- Method 1: seprate Digit log lines and letter log lines
+    - then split the letter log lines from " " and join them again leaving the first word and use these as keys and keep logs safe in values of dictionary
+    - there will be a lot of edge cases in letter logs sorting,
+        - for duplicates append the first word at end to create difference and sort it based on first word only if all other words are same, do this to the duplicate found in the letterLogMap after poping it and the new log that you were going to insert and insert them 
+- Method 2: TODO
+
+### majority-element <br/> https://leetcode.com/problems/majority-element
+- Method 1: make a map for counting the elements, in second loop find max element
+- Method 2: TODO
