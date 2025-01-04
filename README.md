@@ -23,7 +23,14 @@
     - then split the letter log lines from " " and join them again leaving the first word and use these as keys and keep logs safe in values of dictionary
     - there will be a lot of edge cases in letter logs sorting,
         - for duplicates append the first word at end to create difference and sort it based on first word only if all other words are same, do this to the duplicate found in the letterLogMap after poping it and the new log that you were going to insert and insert them 
-- Method 2: TODO
+- Method 2: fix isDigit code to exit in O(1) no need to loop over all the items
+    - make tuples by making the identifier (1st word) the 2nd element in tuple
+    - using this we can use tuple to sort, when the first element is same then and only then second element is considered for sorting but if we concat the elements and sort it considers it as different elements and sorting is not as expected
+- Method 3: building on top sorting using tuples to sort
+    - instead of using tuple (log, identifier), we can use (isDigit, log, identifier) and sort all in one go
+    - Note: tuples can have any number of elements are order and immutable
+
+
 
 ### majority-element <br/> https://leetcode.com/problems/majority-element
 - Method 1: make a map for counting the elements, in second loop find max element
