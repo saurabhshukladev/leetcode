@@ -1,3 +1,9 @@
+## tags
+- TODO
+- FIX
+- BUG
+- TRY
+
 ###  roman-to-integer <br/> https://leetcode.com/problems/roman-to-integer/
 - if the roman before the another roman has smaller value then reduce it by 1 point  
 - example I = 1 before X = 10 is 9
@@ -34,4 +40,13 @@
 
 ### majority-element <br/> https://leetcode.com/problems/majority-element
 - Method 1: make a map for counting the elements, in second loop find max element
-- Method 2: TODO
+- Method 2: remove the second loop and keep track of res and maxCount in same loop
+    - use the following to simplify the code
+        -       dict.get(key, defualt value if no key is found)
+- Method 3: Boyer-Moore Majority Voting Algorithm
+    - imagine each number's count can reduce each other count
+    - we assume that the first element is majority
+    - every time we see that number again we increase count by one
+    - every time we see some other number we decreace count by one
+    - if the count becomes 0 we assign the current number as max
+    - in this the max number will always come on top as it has more than n/2 occurrences and will cancel every other numbers count combined

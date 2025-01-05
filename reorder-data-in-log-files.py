@@ -71,7 +71,7 @@ class Solution:
 # Method 3: from leetcode
 class Solution:
     def reorderLogFiles(self, logs: List[str]) -> List[str]:
-        return sorted(logs,key = self.sort)
+        return sorted(logs,key = self.sort) #TRY: writing this sort from scratch
     def sort(self,logs):
             a,b = logs.split(' ', 1)
             if b[0].isalpha():
