@@ -24,6 +24,9 @@
     - j lags behind and only move when i has found a different number, j doesn't like moving on duplicates it stops after taking 1 step
     - j waits on number to be replaced
 
+### remove-duplicates-from-sorted-array-ii <br/> https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii
+- Method 1: same as remove-duplicates-from-sorted-array-ii but instead of comparing nums[i] and nums[j-1], compare nums[i] with nums[j-1]. and adjust starting vlaues of i and j so that they start with index of 2 instead of 1
+
 ### reorder-data-in-log-files <br/> https://leetcode.com/problems/reorder-data-in-log-files
 - Method 1: seprate Digit log lines and letter log lines
     - then split the letter log lines from " " and join them again leaving the first word and use these as keys and keep logs safe in values of dictionary
