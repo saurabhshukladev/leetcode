@@ -54,7 +54,10 @@
     - if the count becomes 0 we assign the current number as max
     - in this the max number will always come on top as it has more than n/2 occurrences and will cancel every other numbers count combined
 
-### rotate <br/> https://leetcode.com/problems/rotate
+### rotate-array <br/> https://leetcode.com/problems/rotate-array
 - Method 1: split the List in 2 parts based on k (front and back)
     - then clear List and extend it with back + front, as after rotating this will be the sequence
-- Method 2
+- Method 2: reverse
+    - reverse the whole array
+    - then reverse 0 to k-1
+    - then reverse k to size
