@@ -61,3 +61,13 @@
     - reverse the whole array
     - then reverse 0 to k-1
     - then reverse k to size
+
+### best-time-to-buy-and-sell-stock <br/> https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+- Method 1: Time Limit Exceed (Brute Force)
+    - check max profit for all days from ith day and put it on ith day
+    - return max of array
+- Method 2: two pointer
+    - make 2 pointers i (buy day) and j (sell day)
+    - if profit is greater than zero, update max if greater than max
+    - if profit is negative, make sell day as buy day. because we found a new low 
+    - increment sell day by in both the cases
