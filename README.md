@@ -76,3 +76,4 @@
 - Method 1: write 4 arrays on paper and with each combination
     - if len of array is even then return h-l/2 if h and l are even else return h-l/2 + 1 
     - if len of array is odd return ceiling of h-l/2
+- Method 2: same as Method 1 but remove uneccesary steps.
