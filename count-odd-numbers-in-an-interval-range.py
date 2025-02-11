@@ -1,14 +1,17 @@
 class Solution:
     def countOdds(self, low: int, high: int) -> int:
 
-        count = 0;
-        for i in range(low,high):
-            if i%2 == 0:
-                  count + = 1          
-        
-        return 5
+        diff = high - low
+
+        if diff%2 == 0:
+            if high%2 == 0 and low%2 == 0:
+                return int((high-low)/2)
+            else:
+                return int((high-low)/2 + 1)
+        else:
+            return int((high-low)//2 + 1)
 
 
 solObj = Solution()
 
-print(solObj.countOdds(3,7))
+print(solObj.countOdds(8,10))
