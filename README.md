@@ -77,3 +77,8 @@
     - if len of array is even then return h-l/2 if h and l are even else return h-l/2 + 1 
     - if len of array is odd return ceiling of h-l/2
 - Method 2: same as Method 1 but remove uneccesary steps.
+
+### length-of-last-word <br/> https://leetcode.com/problems/length-of-last-word
+- Method 1: Loop over the string backwards
+    - if a char is found start counting and as soon as a space is found stop counting
+    - for this set a flag when char is found and flag and space are found break the loop and return count
