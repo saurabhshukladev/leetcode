@@ -71,6 +71,7 @@
     - if profit is greater than zero, update max if greater than max
     - if profit is negative, make sell day as buy day. because we found a new low 
     - increment sell day by in both the cases
+- Method 3: loop and finding min and max profit
 
 ### count-odd-numbers-in-an-interval-range <br/> https://leetcode.com/problems/count-odd-numbers-in-an-interval-range
 - Method 1: write 4 arrays on paper and with each combination

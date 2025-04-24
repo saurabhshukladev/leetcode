@@ -19,21 +19,34 @@ from typing import List
 #         return global_max
 
 
+# class Solution:
+#     def maxProfit(self, prices: List[int]) -> int:
+
+#         size = len(prices)
+#         maxP = 0
+#         i = 0
+#         j = 1
+
+#         while i < size and j < size:
+#             diff = prices[j] - prices[i]
+#             if diff > 0:
+#                 maxP = max(maxP, diff)
+#             else:
+#                 i = j
+#             j += 1
+#         return maxP
+    
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
 
         size = len(prices)
         maxP = 0
-        i = 0
-        j = 1
+        min = 100000
 
-        while i < size and j < size:
-            diff = prices[j] - prices[i]
-            if diff > 0:
-                maxP = max(maxP, diff)
-            else:
-                i = j
-            j += 1
+        for i in range(size):
+            min = min if min< prices[i] else prices[i]
+            maxP = maxP if maxP > (prices[i]-min) else (prices[i]-min)
+
         return maxP
 
 
